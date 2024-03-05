@@ -1,0 +1,29 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de Fondo</title>
+    <style>
+        #miElemento {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="miElemento" onclick="cambiarColorDeFondo()"></div>
+
+<script>
+    function cambiarColorDeFondo() {
+        var elemento = document.getElementById("miElemento");
+        elemento.style.backgroundColor = "lightgreen";
+    }
+</script>
+
+</body>
+</html>
